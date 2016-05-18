@@ -17,7 +17,7 @@ sleep 5
 MASTER_SPARK_ADDR="spark:$MASTER:7077"
 echo "MASTER_SPARK_ADDR:$MASTER_SPARK_ADDR"
 srun sparkrun.sh $MASTER_SPARK_ADDR 4 1G
-#SCRIPT=$SPARK_HOME/examples/src/main/python/pi.py
-SCRIPT=./jpb.py
+SCRIPT=$SPARK_HOME/examples/src/main/python/pi.py
+#SCRIPT=./jpb.py
 $SPARK_BIN/spark-submit --total-executor-cores 8 --executor-memory 1G --packages com.databricks:spark-csv_2.11:1.4.0 $SCRIPT
 $SPARK_SBIN/stop-master.sh
