@@ -4,5 +4,5 @@ CORES=$2
 MEMORY=$3
 HOST=$(hostname)
 echo "WORKER $HOST"
+ulimit -n
 $SPARK_SBIN/start-slave.sh $MASTER_SPARK_ADDR --cores $CORES --memory $MEMORY
-
