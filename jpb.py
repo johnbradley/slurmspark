@@ -48,22 +48,27 @@ setup_prediction_table(sqlContext)
 setup_gene_table(sqlContext)
 
 sql= """
-SELECT *
+SELECT gene.name, gene.chrom, gene.strand, gene.txStart, gene.txEnd, prediction.start, prediction.value
 FROM prediction 
 inner join gene on 
 prediction.chrom = gene.chrom
 and prediction.start > gene.txStart
 and prediction.start < gene.txEnd
 where prediction.chrom = 'chr1'
-limit 1000
+limit 100
 """
 
 selectedData = sqlContext.sql(sql)
-print("RESULTS")
-print("--------------")
-for each in selectedData.collect():
-   print(each)
-print("--------------")
+#print("RESULTS")
+#print("--------------")
+#for each in selectedData.collect():
+#   print(each)
+#selectedData.write.format("json").save("resultdata")
+writer = selectedData.write.format("com.databricks.spark.csv")
+writer.option("delimiter", "\t")
+writer.option("header", "true")
+writer.save("resultdir")
+#print("--------------")
 
 #chr1	11454	11490	0.321928372788	321
 #--packages com.databricks:spark-csv_2.11:1.4.0
