@@ -10,5 +10,3 @@ Change all the paths in sparktest.sh to point to your location.
 ## Step 3 - run it
 sbatch sparktest.sh 
 
-
-
