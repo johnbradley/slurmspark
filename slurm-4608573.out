@@ -1,0 +1,245 @@
+starting org.apache.spark.deploy.master.Master, logging to /home/jpb67/spark-1.6.1-bin-hadoop2.6/logs/spark-jpb67-org.apache.spark.deploy.master.Master-1-hardac-node01-3.out
+Permission denied, please try again.
+Permission denied, please try again.
+Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).
+MASTER_SPARK_ADDR:spark:hardac-node01-3.genome.duke.edu:7077
+WORKER hardac-node01-3.genome.duke.edu
+4096
+starting org.apache.spark.deploy.worker.Worker, logging to /home/jpb67/spark-1.6.1-bin-hadoop2.6/logs/spark-jpb67-org.apache.spark.deploy.worker.Worker-1-hardac-node01-3.out
+Ivy Default Cache set to: /home/jpb67/.ivy2/cache
+The jars for the packages stored in: /home/jpb67/.ivy2/jars
+:: loading settings :: url = jar:file:/gpfs/fs0/home/jpb67/spark-1.6.1-bin-hadoop2.6/lib/spark-assembly-1.6.1-hadoop2.6.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+com.databricks#spark-csv_2.10 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent;1.0
+	confs: [default]
+	found com.databricks#spark-csv_2.10;1.4.0 in central
+	found org.apache.commons#commons-csv;1.1 in central
+	found com.univocity#univocity-parsers;1.5.1 in central
+:: resolution report :: resolve 478ms :: artifacts dl 6ms
+	:: modules in use:
+	com.databricks#spark-csv_2.10;1.4.0 from central in [default]
+	com.univocity#univocity-parsers;1.5.1 from central in [default]
+	org.apache.commons#commons-csv;1.1 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent
+	confs: [default]
+	0 artifacts copied, 3 already retrieved (0kB/8ms)
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+16/05/18 16:21:02 INFO SparkContext: Running Spark version 1.6.1
+16/05/18 16:21:02 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/05/18 16:21:02 INFO SecurityManager: Changing view acls to: jpb67
+16/05/18 16:21:02 INFO SecurityManager: Changing modify acls to: jpb67
+16/05/18 16:21:02 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(jpb67); users with modify permissions: Set(jpb67)
+16/05/18 16:21:03 INFO Utils: Successfully started service 'sparkDriver' on port 47644.
+16/05/18 16:21:04 INFO Slf4jLogger: Slf4jLogger started
+16/05/18 16:21:04 INFO Remoting: Starting remoting
+16/05/18 16:21:04 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@10.136.79.23:55952]
+16/05/18 16:21:04 INFO Utils: Successfully started service 'sparkDriverActorSystem' on port 55952.
+16/05/18 16:21:04 INFO SparkEnv: Registering MapOutputTracker
+16/05/18 16:21:04 INFO SparkEnv: Registering BlockManagerMaster
+16/05/18 16:21:04 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-b80798c4-2f1d-4805-9895-8e23446d860b
+16/05/18 16:21:04 INFO MemoryStore: MemoryStore started with capacity 511.1 MB
+16/05/18 16:21:04 INFO SparkEnv: Registering OutputCommitCoordinator
+16/05/18 16:21:04 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+16/05/18 16:21:04 INFO SparkUI: Started SparkUI at http://10.136.79.23:4040
+16/05/18 16:21:04 INFO HttpFileServer: HTTP File server directory is /tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/httpd-1e159f26-1f5f-4f54-9a2d-27f1a512a57d
+16/05/18 16:21:04 INFO HttpServer: Starting HTTP Server
+16/05/18 16:21:04 INFO Utils: Successfully started service 'HTTP file server' on port 47602.
+16/05/18 16:21:04 INFO SparkContext: Added JAR file:/home/jpb67/.ivy2/jars/com.databricks_spark-csv_2.10-1.4.0.jar at http://10.136.79.23:47602/jars/com.databricks_spark-csv_2.10-1.4.0.jar with timestamp 1463602864784
+16/05/18 16:21:04 INFO SparkContext: Added JAR file:/home/jpb67/.ivy2/jars/org.apache.commons_commons-csv-1.1.jar at http://10.136.79.23:47602/jars/org.apache.commons_commons-csv-1.1.jar with timestamp 1463602864786
+16/05/18 16:21:04 INFO SparkContext: Added JAR file:/home/jpb67/.ivy2/jars/com.univocity_univocity-parsers-1.5.1.jar at http://10.136.79.23:47602/jars/com.univocity_univocity-parsers-1.5.1.jar with timestamp 1463602864787
+16/05/18 16:21:04 INFO Utils: Copying /gpfs/fs0/home/jpb67/slurmspark/./jpb.py to /tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/userFiles-6cb60f97-fef5-428a-b6d6-102c04cc952d/jpb.py
+16/05/18 16:21:04 INFO SparkContext: Added file file:/gpfs/fs0/home/jpb67/slurmspark/./jpb.py at file:/gpfs/fs0/home/jpb67/slurmspark/./jpb.py with timestamp 1463602864939
+16/05/18 16:21:04 INFO Utils: Copying /home/jpb67/.ivy2/jars/com.databricks_spark-csv_2.10-1.4.0.jar to /tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/userFiles-6cb60f97-fef5-428a-b6d6-102c04cc952d/com.databricks_spark-csv_2.10-1.4.0.jar
+16/05/18 16:21:04 INFO SparkContext: Added file file:/home/jpb67/.ivy2/jars/com.databricks_spark-csv_2.10-1.4.0.jar at file:/home/jpb67/.ivy2/jars/com.databricks_spark-csv_2.10-1.4.0.jar with timestamp 1463602864953
+16/05/18 16:21:04 INFO Utils: Copying /home/jpb67/.ivy2/jars/org.apache.commons_commons-csv-1.1.jar to /tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/userFiles-6cb60f97-fef5-428a-b6d6-102c04cc952d/org.apache.commons_commons-csv-1.1.jar
+16/05/18 16:21:04 INFO SparkContext: Added file file:/home/jpb67/.ivy2/jars/org.apache.commons_commons-csv-1.1.jar at file:/home/jpb67/.ivy2/jars/org.apache.commons_commons-csv-1.1.jar with timestamp 1463602864959
+16/05/18 16:21:04 INFO Utils: Copying /home/jpb67/.ivy2/jars/com.univocity_univocity-parsers-1.5.1.jar to /tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/userFiles-6cb60f97-fef5-428a-b6d6-102c04cc952d/com.univocity_univocity-parsers-1.5.1.jar
+16/05/18 16:21:04 INFO SparkContext: Added file file:/home/jpb67/.ivy2/jars/com.univocity_univocity-parsers-1.5.1.jar at file:/home/jpb67/.ivy2/jars/com.univocity_univocity-parsers-1.5.1.jar with timestamp 1463602864963
+16/05/18 16:21:05 INFO Executor: Starting executor ID driver on host localhost
+16/05/18 16:21:05 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 55971.
+16/05/18 16:21:05 INFO NettyBlockTransferService: Server created on 55971
+16/05/18 16:21:05 INFO BlockManagerMaster: Trying to register BlockManager
+16/05/18 16:21:05 INFO BlockManagerMasterEndpoint: Registering block manager localhost:55971 with 511.1 MB RAM, BlockManagerId(driver, localhost, 55971)
+16/05/18 16:21:05 INFO BlockManagerMaster: Registered BlockManager
+16/05/18 16:21:08 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 208.5 KB, free 208.5 KB)
+16/05/18 16:21:08 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 19.3 KB, free 227.8 KB)
+16/05/18 16:21:08 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on localhost:55971 (size: 19.3 KB, free: 511.1 MB)
+16/05/18 16:21:08 INFO SparkContext: Created broadcast 0 from textFile at TextFile.scala:30
+16/05/18 16:21:08 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 208.5 KB, free 436.3 KB)
+16/05/18 16:21:08 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 19.3 KB, free 455.6 KB)
+16/05/18 16:21:08 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on localhost:55971 (size: 19.3 KB, free: 511.1 MB)
+16/05/18 16:21:08 INFO SparkContext: Created broadcast 1 from textFile at TextFile.scala:30
+16/05/18 16:21:08 INFO FileInputFormat: Total input paths to process : 2
+16/05/18 16:21:09 INFO FileInputFormat: Total input paths to process : 1
+16/05/18 16:21:09 INFO deprecation: mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+16/05/18 16:21:09 INFO deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+16/05/18 16:21:09 INFO deprecation: mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+16/05/18 16:21:09 INFO deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+16/05/18 16:21:09 INFO deprecation: mapred.job.id is deprecated. Instead, use mapreduce.job.id
+16/05/18 16:21:09 INFO SparkContext: Starting job: saveAsTextFile at package.scala:179
+16/05/18 16:21:09 INFO DAGScheduler: Registering RDD 12 (rdd at package.scala:148)
+16/05/18 16:21:09 INFO DAGScheduler: Registering RDD 16 (rdd at package.scala:148)
+16/05/18 16:21:09 INFO DAGScheduler: Registering RDD 23 (rdd at package.scala:148)
+16/05/18 16:21:09 INFO DAGScheduler: Got job 0 (saveAsTextFile at package.scala:179) with 1 output partitions
+16/05/18 16:21:09 INFO DAGScheduler: Final stage: ResultStage 3 (saveAsTextFile at package.scala:179)
+16/05/18 16:21:09 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 2)
+16/05/18 16:21:09 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 2)
+16/05/18 16:21:09 INFO DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[12] at rdd at package.scala:148), which has no missing parents
+16/05/18 16:21:09 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 12.1 KB, free 467.7 KB)
+16/05/18 16:21:09 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 6.4 KB, free 474.1 KB)
+16/05/18 16:21:09 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on localhost:55971 (size: 6.4 KB, free: 511.1 MB)
+16/05/18 16:21:09 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1006
+16/05/18 16:21:09 INFO DAGScheduler: Submitting 60 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[12] at rdd at package.scala:148)
+16/05/18 16:21:09 INFO TaskSchedulerImpl: Adding task set 0.0 with 60 tasks
+16/05/18 16:21:09 INFO DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[16] at rdd at package.scala:148), which has no missing parents
+16/05/18 16:21:09 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 11.0 KB, free 485.1 KB)
+16/05/18 16:21:09 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 5.9 KB, free 491.0 KB)
+16/05/18 16:21:09 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on localhost:55971 (size: 5.9 KB, free: 511.1 MB)
+16/05/18 16:21:09 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1006
+16/05/18 16:21:09 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[16] at rdd at package.scala:148)
+16/05/18 16:21:09 INFO TaskSchedulerImpl: Adding task set 1.0 with 2 tasks
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, partition 0,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, localhost, partition 1,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2, localhost, partition 2,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3, localhost, partition 3,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 4.0 in stage 0.0 (TID 4, localhost, partition 4,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 5.0 in stage 0.0 (TID 5, localhost, partition 5,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 6.0 in stage 0.0 (TID 6, localhost, partition 6,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 7.0 in stage 0.0 (TID 7, localhost, partition 7,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 8.0 in stage 0.0 (TID 8, localhost, partition 8,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 9.0 in stage 0.0 (TID 9, localhost, partition 9,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 10.0 in stage 0.0 (TID 10, localhost, partition 10,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 11.0 in stage 0.0 (TID 11, localhost, partition 11,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 12.0 in stage 0.0 (TID 12, localhost, partition 12,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 13.0 in stage 0.0 (TID 13, localhost, partition 13,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 14.0 in stage 0.0 (TID 14, localhost, partition 14,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 15.0 in stage 0.0 (TID 15, localhost, partition 15,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 16.0 in stage 0.0 (TID 16, localhost, partition 16,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 17.0 in stage 0.0 (TID 17, localhost, partition 17,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 18.0 in stage 0.0 (TID 18, localhost, partition 18,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 19.0 in stage 0.0 (TID 19, localhost, partition 19,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 20.0 in stage 0.0 (TID 20, localhost, partition 20,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 21.0 in stage 0.0 (TID 21, localhost, partition 21,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 22.0 in stage 0.0 (TID 22, localhost, partition 22,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 23.0 in stage 0.0 (TID 23, localhost, partition 23,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 24.0 in stage 0.0 (TID 24, localhost, partition 24,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 25.0 in stage 0.0 (TID 25, localhost, partition 25,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 26.0 in stage 0.0 (TID 26, localhost, partition 26,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 27.0 in stage 0.0 (TID 27, localhost, partition 27,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 28.0 in stage 0.0 (TID 28, localhost, partition 28,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 29.0 in stage 0.0 (TID 29, localhost, partition 29,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 30.0 in stage 0.0 (TID 30, localhost, partition 30,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO TaskSetManager: Starting task 31.0 in stage 0.0 (TID 31, localhost, partition 31,PROCESS_LOCAL, 2658 bytes)
+16/05/18 16:21:09 INFO Executor: Running task 9.0 in stage 0.0 (TID 9)
+16/05/18 16:21:09 INFO Executor: Running task 4.0 in stage 0.0 (TID 4)
+16/05/18 16:21:09 INFO Executor: Running task 13.0 in stage 0.0 (TID 13)
+16/05/18 16:21:09 INFO Executor: Running task 3.0 in stage 0.0 (TID 3)
+16/05/18 16:21:09 INFO Executor: Running task 8.0 in stage 0.0 (TID 8)
+16/05/18 16:21:09 INFO Executor: Running task 6.0 in stage 0.0 (TID 6)
+16/05/18 16:21:09 INFO Executor: Running task 11.0 in stage 0.0 (TID 11)
+16/05/18 16:21:09 INFO Executor: Running task 7.0 in stage 0.0 (TID 7)
+16/05/18 16:21:09 INFO Executor: Running task 2.0 in stage 0.0 (TID 2)
+16/05/18 16:21:09 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+16/05/18 16:21:09 INFO Executor: Running task 18.0 in stage 0.0 (TID 18)
+16/05/18 16:21:09 INFO Executor: Running task 12.0 in stage 0.0 (TID 12)
+16/05/18 16:21:09 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+16/05/18 16:21:09 INFO Executor: Running task 10.0 in stage 0.0 (TID 10)
+16/05/18 16:21:09 INFO Executor: Running task 20.0 in stage 0.0 (TID 20)
+16/05/18 16:21:09 INFO Executor: Running task 19.0 in stage 0.0 (TID 19)
+16/05/18 16:21:09 INFO Executor: Running task 17.0 in stage 0.0 (TID 17)
+16/05/18 16:21:09 INFO Executor: Running task 16.0 in stage 0.0 (TID 16)
+16/05/18 16:21:09 INFO Executor: Running task 15.0 in stage 0.0 (TID 15)
+16/05/18 16:21:09 INFO Executor: Running task 14.0 in stage 0.0 (TID 14)
+16/05/18 16:21:09 INFO Executor: Running task 5.0 in stage 0.0 (TID 5)
+16/05/18 16:21:09 INFO Executor: Running task 24.0 in stage 0.0 (TID 24)
+16/05/18 16:21:09 INFO Executor: Running task 27.0 in stage 0.0 (TID 27)
+16/05/18 16:21:09 INFO Executor: Running task 23.0 in stage 0.0 (TID 23)
+16/05/18 16:21:09 INFO Executor: Running task 22.0 in stage 0.0 (TID 22)
+16/05/18 16:21:09 INFO Executor: Running task 21.0 in stage 0.0 (TID 21)
+16/05/18 16:21:09 INFO Executor: Running task 28.0 in stage 0.0 (TID 28)
+16/05/18 16:21:09 INFO Executor: Running task 26.0 in stage 0.0 (TID 26)
+16/05/18 16:21:09 INFO Executor: Running task 29.0 in stage 0.0 (TID 29)
+16/05/18 16:21:09 INFO Executor: Running task 25.0 in stage 0.0 (TID 25)
+16/05/18 16:21:09 INFO Executor: Running task 30.0 in stage 0.0 (TID 30)
+16/05/18 16:21:09 INFO Executor: Running task 31.0 in stage 0.0 (TID 31)
+16/05/18 16:21:09 INFO Executor: Fetching file:/home/jpb67/.ivy2/jars/com.databricks_spark-csv_2.10-1.4.0.jar with timestamp 1463602864953
+16/05/18 16:21:09 INFO Utils: /home/jpb67/.ivy2/jars/com.databricks_spark-csv_2.10-1.4.0.jar has been previously copied to /tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/userFiles-6cb60f97-fef5-428a-b6d6-102c04cc952d/com.databricks_spark-csv_2.10-1.4.0.jar
+16/05/18 16:21:09 INFO Executor: Fetching file:/home/jpb67/.ivy2/jars/org.apache.commons_commons-csv-1.1.jar with timestamp 1463602864959
+16/05/18 16:21:09 INFO Utils: /home/jpb67/.ivy2/jars/org.apache.commons_commons-csv-1.1.jar has been previously copied to /tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/userFiles-6cb60f97-fef5-428a-b6d6-102c04cc952d/org.apache.commons_commons-csv-1.1.jar
+16/05/18 16:21:09 INFO Executor: Fetching file:/home/jpb67/.ivy2/jars/com.univocity_univocity-parsers-1.5.1.jar with timestamp 1463602864963
+16/05/18 16:21:09 INFO Utils: /home/jpb67/.ivy2/jars/com.univocity_univocity-parsers-1.5.1.jar has been previously copied to /tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/userFiles-6cb60f97-fef5-428a-b6d6-102c04cc952d/com.univocity_univocity-parsers-1.5.1.jar
+16/05/18 16:21:09 INFO Executor: Fetching file:/gpfs/fs0/home/jpb67/slurmspark/./jpb.py with timestamp 1463602864939
+16/05/18 16:21:09 INFO Utils: /gpfs/fs0/home/jpb67/slurmspark/./jpb.py has been previously copied to /tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/userFiles-6cb60f97-fef5-428a-b6d6-102c04cc952d/jpb.py
+16/05/18 16:21:09 INFO Executor: Fetching http://10.136.79.23:47602/jars/com.databricks_spark-csv_2.10-1.4.0.jar with timestamp 1463602864784
+16/05/18 16:21:09 INFO Utils: Fetching http://10.136.79.23:47602/jars/com.databricks_spark-csv_2.10-1.4.0.jar to /tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/userFiles-6cb60f97-fef5-428a-b6d6-102c04cc952d/fetchFileTemp3429693317623765028.tmp
+16/05/18 16:21:09 INFO Utils: /tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/userFiles-6cb60f97-fef5-428a-b6d6-102c04cc952d/fetchFileTemp3429693317623765028.tmp has been previously copied to /tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/userFiles-6cb60f97-fef5-428a-b6d6-102c04cc952d/com.databricks_spark-csv_2.10-1.4.0.jar
+16/05/18 16:21:09 INFO Executor: Adding file:/tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/userFiles-6cb60f97-fef5-428a-b6d6-102c04cc952d/com.databricks_spark-csv_2.10-1.4.0.jar to class loader
+16/05/18 16:21:09 INFO Executor: Fetching http://10.136.79.23:47602/jars/com.univocity_univocity-parsers-1.5.1.jar with timestamp 1463602864787
+16/05/18 16:21:09 INFO Utils: Fetching http://10.136.79.23:47602/jars/com.univocity_univocity-parsers-1.5.1.jar to /tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/userFiles-6cb60f97-fef5-428a-b6d6-102c04cc952d/fetchFileTemp44666487802429334.tmp
+16/05/18 16:21:09 INFO Utils: /tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/userFiles-6cb60f97-fef5-428a-b6d6-102c04cc952d/fetchFileTemp44666487802429334.tmp has been previously copied to /tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/userFiles-6cb60f97-fef5-428a-b6d6-102c04cc952d/com.univocity_univocity-parsers-1.5.1.jar
+16/05/18 16:21:09 INFO Executor: Adding file:/tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/userFiles-6cb60f97-fef5-428a-b6d6-102c04cc952d/com.univocity_univocity-parsers-1.5.1.jar to class loader
+16/05/18 16:21:09 INFO Executor: Fetching http://10.136.79.23:47602/jars/org.apache.commons_commons-csv-1.1.jar with timestamp 1463602864786
+16/05/18 16:21:09 INFO Utils: Fetching http://10.136.79.23:47602/jars/org.apache.commons_commons-csv-1.1.jar to /tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/userFiles-6cb60f97-fef5-428a-b6d6-102c04cc952d/fetchFileTemp7544931996283152743.tmp
+16/05/18 16:21:09 INFO Utils: /tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/userFiles-6cb60f97-fef5-428a-b6d6-102c04cc952d/fetchFileTemp7544931996283152743.tmp has been previously copied to /tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/userFiles-6cb60f97-fef5-428a-b6d6-102c04cc952d/org.apache.commons_commons-csv-1.1.jar
+16/05/18 16:21:09 INFO Executor: Adding file:/tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/userFiles-6cb60f97-fef5-428a-b6d6-102c04cc952d/org.apache.commons_commons-csv-1.1.jar to class loader
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:335544320+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:0+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:234881024+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:301989888+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:805306368+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:973078528+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:570425344+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:67108864+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:134217728+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:33554432+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:1040187392+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:939524096+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:704643072+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:402653184+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:436207616+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:603979776+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:905969664+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:1006632960+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:268435456+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:671088640+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:167772160+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:503316480+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:469762048+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:369098752+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:536870912+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:201326592+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:838860800+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:872415232+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:738197504+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:771751936+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:637534208+33554432
+16/05/18 16:21:09 INFO HadoopRDD: Input split: file:/gpfs/fs0/home/jpb67/data/ELK1.bed:100663296+33554432
+16/05/18 16:21:09 INFO GeneratePredicate: Code generated in 123.607769 ms
+16/05/18 16:21:09 INFO GenerateUnsafeProjection: Code generated in 38.819632 ms
+16/05/18 16:21:09 INFO GenerateMutableProjection: Code generated in 20.853046 ms
+slurmstepd: error: *** JOB 4608573 CANCELLED AT 2016-05-18T16:21:22 *** on hardac-node01-3
+16/05/18 16:21:22 INFO SparkContext: Invoking stop() from shutdown hook
+16/05/18 16:21:22 WARN QueuedThreadPool: 2 threads could not be stopped
+16/05/18 16:21:22 INFO SparkUI: Stopped Spark web UI at http://10.136.79.23:4040
+16/05/18 16:21:22 INFO DAGScheduler: Job 0 failed: saveAsTextFile at package.scala:179, took 13.378018 s
+16/05/18 16:21:22 INFO DAGScheduler: ShuffleMapStage 0 (rdd at package.scala:148) failed in 13.253 s
+16/05/18 16:21:22 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerStageCompleted(org.apache.spark.scheduler.StageInfo@7f1f6b67)
+16/05/18 16:21:22 INFO DAGScheduler: ShuffleMapStage 1 (rdd at package.scala:148) failed in 13.265 s
+16/05/18 16:21:22 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerStageCompleted(org.apache.spark.scheduler.StageInfo@8460f6e)
+16/05/18 16:21:22 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerJobEnd(0,1463602882646,JobFailed(org.apache.spark.SparkException: Job 0 cancelled because SparkContext was shut down))
+16/05/18 16:21:22 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+16/05/18 16:21:23 INFO MemoryStore: MemoryStore cleared
+16/05/18 16:21:23 INFO BlockManager: BlockManager stopped
+16/05/18 16:21:23 INFO BlockManagerMaster: BlockManagerMaster stopped
+16/05/18 16:21:23 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+16/05/18 16:21:23 INFO SparkContext: Successfully stopped SparkContext
+16/05/18 16:21:23 INFO ShutdownHookManager: Shutdown hook called
+16/05/18 16:21:23 INFO ShutdownHookManager: Deleting directory /tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67
+16/05/18 16:21:23 INFO ShutdownHookManager: Deleting directory /tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/httpd-1e159f26-1f5f-4f54-9a2d-27f1a512a57d
+16/05/18 16:21:23 INFO ShutdownHookManager: Deleting directory /tmp/spark-c48b355a-895c-48bd-8f74-a5853e968f67/pyspark-de5be1db-c000-4116-93a0-cb17ebb032e6
